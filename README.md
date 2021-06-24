@@ -1,3 +1,3 @@
 # LiveChat
 
-Demo project for Spring Boot (web socket)
+Writing a simple messaging system using Spring Boot, WebSocket, STOMP, StompJS, SockJS libraries.
