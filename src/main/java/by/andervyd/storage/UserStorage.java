@@ -4,10 +4,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UserStorage {
+
     private static UserStorage instance;
     private Set<String> users;
 
-    public UserStorage() {
+    private UserStorage() {
         users = new HashSet<>();
     }
 
@@ -24,7 +25,7 @@ public class UserStorage {
 
     public void setUser(String userName) throws Exception {
         if (users.contains(userName)) {
-            throw new Exception("User already exists with username: " + userName);
+            throw new Exception("User already exists with userName: " + userName);
         }
         users.add(userName);
     }
